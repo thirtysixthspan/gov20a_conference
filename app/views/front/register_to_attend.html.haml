@@ -1,0 +1,28 @@
+#content#register
+  %h1.typeface-js{:style=>"font-family: klavika;"} Register to Attend
+
+  %p <a href="/order/form">Registration Signup Form</a>
+    
+  %h1.typeface-js{:style=>"font-family: klavika;"} Pricing
+  %table
+    %tr{:style=>"background-color:#ccc"} 
+      %td Registration Deadline
+      %td Standard Price<br>April 23rd  
+      %td Last Minute Price<br>May 5th  
+    %tr{:style=>"background-color:#eee"} 
+      %td Conference Pass
+      %td $49  
+      %td $99
+    
+  %h1.typeface-js{:style=>"font-family: klavika;"} What is Included?      
+  - @items = Item.find(:all)
+  - @items.each do |item|
+    .item_descriptions
+      %h3= item.name 
+      %p= item.description 
+
+  %h1.typeface-js{:style=>"font-family: klavika;"} Questions
+  %p Direct all registration related questions to <a href="mailto:registration@gov20a.com">registration@gov20a.com</a>.
+ 
+  .spacer
+      

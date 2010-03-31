@@ -1,0 +1,21 @@
+# Typus Models Configuration File
+#
+# Use the README file on the same folder as this file as a reference to
+# customize this file to your needs.
+
+Presentation:
+  fields:
+    list: title, author, theme, format, status
+    form: title, author, email, affiliation, theme, format, abstract, comments, biography, photo, status, start_time, duration, slides, video, agreed_to_terms
+    show: id, title, author, email, affiliation, theme, format, abstract, comments, biography, photo, status, start_time, duration, slides, video, created_at, updated_at
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships:
+  filters:
+  search:
+  application: gov20a_conference
+  description:
+
+

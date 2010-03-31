@@ -1,0 +1,7 @@
+.grid_12#content#theme_drill_down
+  
+  .spacer
+
+  - @presentations.each do |@presentation|
+    = render :partial => "presentation", :locals => { :presentation => @presentation }
+    .spacer.clear

@@ -1,0 +1,78 @@
+!!!
+%html
+  %head{:profile=>"http://gmpg.org/xfn/11"}
+    %title= @website_title
+    = stylesheet_link_tag "reset.css"
+    = stylesheet_link_tag "base.css"
+    = stylesheet_link_tag *(['global'] + @stylesheets)
+    = javascript_include_tag "typeface-0.14.js"
+    = javascript_include_tag "klavika_regular.typeface.js"
+
+
+  %body
+    #wrapper
+      #header  
+        %h1#logo Gov2.0a
+        %ul#nav
+          %li#nav-home
+            %a{:href=>"/"} Home           
+          %li#nav-program 
+            %a{:href=>"/program"} Program         
+          %li#nav-venue 
+            %a{:href=>"/venue"} Venue
+          %li#nav-sponsorship 
+            %a{:href=>"/sponsorship"} Sponsorship           
+          %li#nav-contact 
+            %a{:href=>"/contact"} Contact Us        
+          %li#nav-register 
+            %a{:href=>"/register_to_attend"} Register        
+
+      #content-wrapper      
+        #content
+          = yield	
+
+        .sidebar_wrapper
+        
+          #sidebar
+
+            %p.h2.typeface-js{:style=>"font-family:klavika;"} Speakers
+
+            %ul#speakers
+              - @all_presentations.each do |presentation|
+                %li
+                  %a{:href=>url_for(:controller=>'presentation',:action=>'detail',:id=>presentation.id)}
+                    %img{:src=>presentation.photo,:width=>"75px"}
+                    %span{:class=>"name"}= presentation.author
+                  <br>
+                  %span{:class=>"comp"}= presentation.affiliation
+          
+          #sidebar
+                         
+            %p.h2.typeface-js{:style=>"font-family:klavika;"} Sponsors
+
+            %ul
+              %li
+
+
+   		    
+        #bottom	
+   		     			
+      #footer
+        %p{:id=>'subnav'}
+          %a{:href=>"/presentation"} Speakers 
+          ||
+          %a{:href=>"/theme"} Themes
+          ||        
+          %a{:href=>"/terms_of_use"} Terms of Use 
+          ||
+          %a{:href=>"/privacy_policy"} Privacy Policy 
+          ||
+          %a{:href=>"/acknowledgements"} Acknowledgements 
+          ||
+          %a{:href=>"/contact"} Contact Us
+
+
+
+         
+
+
