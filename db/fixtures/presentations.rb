@@ -77,4 +77,61 @@ Presentation.seed(:title, :author) do |s|
   s.video=""
 end
 
+Presentation.seed(:title, :author) do |s|  
+  s.title = "Title TBD"   
+  s.author = "Ryan Keisel"
+  s.affiliation = "Oklahoma State Representative"
+  s.email = ""  
+  s.biography = "Kiesel was born on January 15, 1980, in Oklahoma City, Oklahoma. Kiesel is a fifth generation Seminole County resident. He received a bachelor's degree in political science with a minor in history from the University of Oklahoma, graduating with honors. In 2006 he earned his Juris Doctorate degree from the University of Oklahoma College of Law, graduating with honors. Among his many honors from the College of Law, Kiesel received the Paul K. Frost Award for his distinguished academic performance and commitment to public service. A Carl Albert Public Intern, Kiesel worked as a policy analyst for the Oklahoma State Senate  and as a leadership staff member to Senator Kelly Haney."
+  s.photo = "/images/bio_photo_ryankeisel.jpg"
+  s.theme = ""
+  s.abstract = ""
+  s.comments = ""
+  s.format = "talk"
+  s.agreed_to_terms = "yes"
+  s.status = "approved"
+  s.start_time = Time.local(2010,"may",6,19,0,0)  
+  s.duration = 30
+  s.slides=""
+  s.video=""
+end
+
+Presentation.seed(:title, :author) do |s|  
+  s.title = "Title TBD"   
+  s.author = "Mark Mitchell"
+  s.affiliation = "OK.gov"
+  s.email = ""  
+  s.biography = "As the General Manager of OK.gov (managed by NIC Inc.), Mark guides OK.gov’s team in partnering with the state of Oklahoma to deliver customized eGovernment solutions that streamline processes and enable 24/7 access to government services. Mark spearheads administrative duties, manages the OK.gov business process and oversees product development of software and Web services for government agencies in Oklahoma. Mark brings over fourteen years of experience in project management, customer relations and technical services management from his management roles with DCA Services and CallTower. Mark served as Director of Portal Operations for OK.gov for two and half years before becoming General Manager of the Oklahoma portal.  As Director of Portal Operations Mark oversaw a successful rollout of a statewide Internet Point of Sale system for the Oklahoma Department of Wildlife and was instrumental in the rebranding of the Oklahoma portal from YourOklahoma.com to OK.gov.   Mark holds a Bachelor of Business Administration in Management Information Systems with a minor in Economics from the University of Oklahoma."
+  s.photo = "/images/bio_photo_markmitchell.jpg"
+  s.theme = ""
+  s.abstract = ""
+  s.comments = ""
+  s.format = "talk"
+  s.agreed_to_terms = "yes"
+  s.status = "approved"
+  s.start_time = Time.local(2010,"may",6,19,0,0)  
+  s.duration = 30
+  s.slides=""
+  s.video=""
+end
+
+Presentation.seed(:title, :author) do |s|  
+  s.title = "Title TBD"   
+  s.author = "Zach Nash"
+  s.affiliation = "Creative Director, City of OKC"
+  s.email = ""  
+  s.biography = ""
+  s.photo = "/images/bio_photo_zachnash.jpg"
+  s.theme = ""
+  s.abstract = ""
+  s.comments = ""
+  s.format = "talk"
+  s.agreed_to_terms = "yes"
+  s.status = "approved"
+  s.start_time = Time.local(2010,"may",6,19,0,0)  
+  s.duration = 30
+  s.slides=""
+  s.video=""
+end
+
 
