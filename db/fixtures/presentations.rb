@@ -120,7 +120,7 @@ Presentation.seed(:title, :author) do |s|
   s.author = "Zach Nash"
   s.affiliation = "Creative Director, City of OKC"
   s.email = ""  
-  s.biography = ""
+  s.biography = "Zach Nash, @zachnash, is creative manager for the City of Oklahoma City. His responsibilities include www.okc.gov, City Channel 20, brand management and gov 2.0 strategies. Nash is a former print journalist, working at both daily and weekly newspapers throughout the state. Prior to joining the City's Public Information and Marketing Department (some would saying stepping over to the dark side, also known as public relations) he worked at the Oklahoma Press Association, a trade organization serving over 200 Oklahoma newspapers. Nash holds a bachelor’s degree in mass communication from the University of Central Oklahoma and has a passion for government transparency and photography."
   s.photo = "/images/bio_photo_zachnash.jpg"
   s.theme = ""
   s.abstract = ""
