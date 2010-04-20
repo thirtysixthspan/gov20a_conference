@@ -2,34 +2,151 @@
 
   .spacer 
 
-  .grid_4
+  .grid_1
     .spacer
-  .grid_7
+  .grid_4
     .schedule_block
       .schedule_block_header
       .schedule_block_body
         .white_header THURSDAY, MAY 6th
       .schedule_block_bg
+      .schedule_block_bg
+  .grid_1
 
-        The final line-up of speakers is still to be determined.
-        .spacer.clear
-        .spacer.clear
 
-  .spacer 
-  .spacer 
+#content#schedule
 
-  .grid_4
+  .spacer
+  .schedule_block_y
+    .schedule_block_y_header
+    .schedule_block_y_body.halfhour
+      %h1 
+        8:00 AM - REGISTRATION 
+        .room Room 16 <br>  Convention Center
+  
+  .spacer
+  .schedule_block_b
+    .schedule_block_b_header
+    .schedule_block_b_body.hour
+      %h1 
+        9:00 AM - 10:20 AM - Session I
+        .room Room 16 <br>  Convention Center
+        = render :partial => "presentation_block", :locals => { :start_time_string => "2010-5-6 09:00:00" }
+
+
+  .spacer
+  .schedule_block_b
+    .schedule_block_b_header
+    .schedule_block_b_body.hour
+      %h1 
+        10:30 AM - 12:00 Noon - Session II
+        .room Room 16 <br>  Convention Center
+        = render :partial => "presentation_block", :locals => { :start_time_string => "2010-5-6 10:30:00" }
+
+
+  .spacer
+  .schedule_block_y
+    .schedule_block_y_header
+    .schedule_block_y_body.halfhour
+      %h1 
+        12:00 Noon - 2:00 PM - Lunch
+        .room (on your own)
+
+
+  .spacer
+  .schedule_block_b
+    .schedule_block_b_header
+    .schedule_block_b_body.hour
+      %h1 
+        2:00 PM - 3:20 PM - Session III
+        .room Room 16 <br>  Convention Center
+        = render :partial => "presentation_block", :locals => { :start_time_string => "2010-5-6 14:00:00" }
+
+  .spacer
+  .schedule_block_b
+    .schedule_block_b_header
+    .schedule_block_b_body.hour
+      %h1 
+        3:30 PM - 5:00 PM - Session IV
+        .room Room 16 <br>  Convention Center
+        = render :partial => "presentation_block", :locals => { :start_time_string => "2010-5-6 15:30:00" }
+
+  .spacer
+  .schedule_block_y
+    .schedule_block_y_header
+    .schedule_block_y_body.halfhour
+      %h1 
+        5:00 PM - 6:00 PM - Networking Reception
+        .room Reception Area
+
+  .spacer
+  .schedule_block_g
+    .schedule_block_g_header
+    .schedule_block_g_body.hour
+      %h1 
+        6:00 PM - 7:30 PM - Dinner
+        .room Room 16 <br>  Convention Center
+        = render :partial => "presentation_block", :locals => { :start_time_string => "2010-5-6 18:00:00" }
+
+  .spacer
+  .schedule_block_y
+    .schedule_block_y_header
+    .schedule_block_y_body.halfhour
+      %h1 
+        7:30 PM - 8:00 PM - Speakers Reception
+        .room Reception Area
+              
+.clear.spacer
+.clear.spacer
+              
+#content#schedule
+  .grid_1
     .spacer
-  .grid_7
+  .grid_4
     .schedule_block
       .schedule_block_header
       .schedule_block_body
-        .white_header Friday, MAY 7th
+        .white_header FRIDAY, MAY 7th
       .schedule_block_bg
+      .schedule_block_bg
+  .grid_1
 
-        The final line-up of speakers is still to be determined.
-        .spacer.clear
-        .spacer.clear
- 
 
-	
+#content#schedule
+
+  .spacer
+  .schedule_block_b
+    .schedule_block_b_header
+    .schedule_block_b_body.hour
+      %h1 
+        9:00 AM - 10:30 AM - Social Media 
+        .room Room 16 <br> Convention Center
+        = render :partial => "presentation_block", :locals => { :start_time_string => "2010-5-7 09:00:00" }
+
+  .spacer
+  .schedule_block_b
+    .schedule_block_b_header
+    .schedule_block_b_body.hour
+      %h1 
+        11:30 AM - 12:00 AM - Crowd Sourcing 
+        .room Room 16 <br> Convention Center
+        = render :partial => "presentation_block", :locals => { :start_time_string => "2010-5-7 10:30:00" }
+          
+  .spacer
+  .schedule_block_y
+    .schedule_block_y_header
+    .schedule_block_y_body.halfhour
+      %h1 
+        12:00 Noon - 2:00 PM - Lunch
+        .room (on your own)
+          
+  .spacer
+  .schedule_block_b
+    .schedule_block_b_header
+    .schedule_block_b_body.hour
+      %h1 
+        2:00 PM - 3:30 PM - Citizen Participation 
+        .room Room 16 <br> Convention Center
+        = render :partial => "presentation_block", :locals => { :start_time_string => "2010-5-7 14:00:00" }
+
+

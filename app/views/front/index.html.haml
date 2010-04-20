@@ -11,8 +11,24 @@
     
 %p.h2.typeface-js{:style=>"font-family: klavika;"} Technology Applied to Improve Government
 
-%p Gov 2.0 stand for Government 2.0, the application of increased connectivity and new technologies to better help government achieve its goals by being transparent, participatory and collaborative. The benefits of this approach include increased efficiency, improved services, greater accessibility of public services, as well as more accountability.
+%p Gov 2.0 stands for Government 2.0, the application of increased connectivity and new technologies to better help government achieve its goals by being transparent, participatory and collaborative. The benefits of this approach include increased efficiency, improved services, greater accessibility of public services, as well as more accountability.
 
 %p The Gov 2.0a conference is focused on applications of technology to government problems. The conference will be a forum to learn about successful Gov 2.0 applications through case studies, to learn about best practices for Gov 2.0 applications, and to network with other professionals from city and state organizations, community groups, non-profits and the private sector who share interest in the application of technology to improve the functioning of our government.
 
 %p The Gov 2.0a conference will be a two day event held May 6th and 7th at the Cox Convention Center in Oklahoma City. The conference will host talks, training sessions and networking sessions.
+
+%p.h2.typeface-js{:style=>"font-family: klavika;"} Gov2.0a Keynote Dinner
+
+%p Join us for dinner on 6pm, May 6th and hear presentations from Oklahoma State Representatives Ryan Keisel and Jason Murphey, and the Gov2.0a Keynote presentation from Oklahoma State Chief Information Officer, Alex Pettit. <a href="register_to_attend">Tickets for the dinner alone are available now</a>.
+
+- start_time_string = "2010-5-6 18:00:00"
+- start_time = Time.zone.parse(start_time_string)
+- end_time = start_time + 85.minutes
+- talks = Presentation.find(:all,:conditions=>['start_time between ? and ?', start_time, end_time], :order =>'start_time ASC')
+- talks.each do |talk|
+  .talk_block
+    %img{:src=>talk.photo,:class=>"large_photo left"}
+    %h2= link_to talk.title, :controller=> 'presentation', :action=>'detail', :id=> talk.id
+    %h3= talk.author
+    %h3= talk.affiliation
+  .clear 
