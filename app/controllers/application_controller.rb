@@ -20,7 +20,9 @@ class ApplicationController < ActionController::Base
   end
 
   def load_presentations
-      @all_presentations = Presentation.find(:all, :conditions => ['status = "approved"'], :order => 'RAND()')      
+      @all_presentations = []
+      @presentations = Presentation.find(:all, :conditions => ['status = "approved"'], :order => 'RAND()')      
+      @presentations.each { |p| @all_presentations << p if @all_presentations.select { |o| o.author == p.author } == [] }
   end
 
   
