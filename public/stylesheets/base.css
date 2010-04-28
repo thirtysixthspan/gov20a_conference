@@ -95,6 +95,14 @@ ul#nav li#nav-register a {
 	width: 129px;
 }
 
+ul#nav li#nav-register a:hover {
+	display: block;
+	height: 26px;
+	background-position: 0 0;
+}
+ul#nav li#nav-register a {
+	background-position: 0 100%;
+}
 
 
 /*  Content Overview
